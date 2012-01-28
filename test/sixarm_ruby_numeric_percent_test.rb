@@ -7,6 +7,7 @@ require 'sixarm_ruby_numeric_percent'
 class StringTest < Test::Unit::TestCase
 
   N=0.12345
+  NAN=0.0/0.0
 
   def test_percent_with_precision_nil
     assert_equal(12, N.percent)
@@ -26,6 +27,10 @@ class StringTest < Test::Unit::TestCase
 
   def test_percent_with_precision_4_with_round_up
     assert_equal(12.35, N.percent(4))
+  end
+
+  def test_nan
+    assert(NAN.percent.nan?)
   end
 
 end
