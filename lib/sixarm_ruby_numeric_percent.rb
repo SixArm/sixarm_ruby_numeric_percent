@@ -27,7 +27,7 @@ class Numeric
   # other precisions return floats.
 
   def percent(precision=nil)
-    return self if self.nan?
+    return self if respond_to?('nan?') and nan?
     # Optimized for speed for the most common cases
     return case precision
     when nil, 2

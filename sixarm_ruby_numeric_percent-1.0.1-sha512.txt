@@ -1,1 +1,0 @@
-fe4c7e4a7e3f759978b6b8765f5a0e0c98db76199e125d95d1c19da4dab93abc1cebef6fe95e2fe5db49450f836f0958835f47d36b4b84dbae0578f3f6b3c27d  sixarm_ruby_numeric_percent-1.0.1.gem
