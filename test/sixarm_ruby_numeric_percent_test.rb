@@ -4,10 +4,11 @@ require 'simplecov'
 SimpleCov.start
 require 'sixarm_ruby_numeric_percent'
 
-class StringTest < Test::Unit::TestCase
+class NumericPercentTest < Test::Unit::TestCase
 
-  N=0.12345
-  NAN=0.0/0.0
+  N = 0.12345
+  NAN = 0/0.0
+  INFINITE = 1/0.0
 
   def test_percent_with_precision_nil
     assert_equal(12, N.percent)
@@ -31,6 +32,10 @@ class StringTest < Test::Unit::TestCase
 
   def test_nan
     assert(NAN.percent.nan?)
+  end
+
+  def test_infinite
+    assert(INFINITE.percent.infinite?)
   end
 
 end

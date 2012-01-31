@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_numeric_percent"
   s.summary           = "SixArm.com » Ruby » Numeric#percent to calculate a percentage"
-  s.version           = "1.0.2"
+  s.version           = "1.0.3"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
   s.homepage          = "http://sixarm.com/"

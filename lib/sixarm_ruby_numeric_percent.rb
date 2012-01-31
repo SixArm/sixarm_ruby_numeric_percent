@@ -19,15 +19,16 @@ class Numeric
   #   x.percent(3) => 12.3
   #   x.percent(4) => 12.34
   #
-  # Special case for not-a-number handling:
+  # Special cases:
   #
-  #   (0.0/0.0).percent => NaN
+  #   NaN.percent => NaN
+  #   Infinite.percent => Infinite
   #
   # Note that precision 1 and 2 are optimized for speed and also to return integers;
   # other precisions return floats.
 
   def percent(precision=nil)
-    return self if respond_to?('nan?') and nan?
+    return self if (respond_to?('nan?') && nan?) || (respond_to?('infinite?') && infinite?) 
     # Optimized for speed for the most common cases
     return case precision
     when nil, 2
