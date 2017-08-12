@@ -1,4 +1,4 @@
-# Ruby » <br> Numeric#percent to calculate a percentage
+SixArm.com → Ruby → <br> Numeric#percent to calculate a percentage
 
 * Doc: <http://sixarm.com/sixarm_ruby_numeric_percent/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_numeric_percent>
