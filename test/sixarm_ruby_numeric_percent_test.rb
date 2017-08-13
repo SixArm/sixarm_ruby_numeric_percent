@@ -4,7 +4,7 @@ require "simplecov"
 SimpleCov.start
 require "sixarm_ruby_numeric_percent"
 
-class NumericPercentTest < Test::Unit::TestCase
+class NumericPercentTest < Minitest::Test
 
   N = 0.12345
   NAN = 0/0.0
