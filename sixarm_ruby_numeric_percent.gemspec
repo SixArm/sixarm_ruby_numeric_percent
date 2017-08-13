@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_numeric_percent"
-  s.summary           = "SixArm.com » Ruby » Numeric#percent"
+  s.summary           = "SixArm.com → Ruby → Numeric#percent"
   s.description       = "Numeric#percent method to calculate a percentage"
   s.version           = "1.0.4"
 
